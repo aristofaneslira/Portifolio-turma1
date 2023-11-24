@@ -5,7 +5,7 @@ import Inicio from "./Components/Inicio";
 import Sobre from "./Components/Sobre";
 import Projetos from "./Components/Projetos";
 
-function App() {
+export default function App() {
   return (
     <>
     <BrowserRouter>
@@ -13,10 +13,9 @@ function App() {
     <Routes>
       <Route path="/" element={<Inicio/>}/>
       <Route path="/sobre" element={<Sobre/>}/>
-      <Route />
+      <Route path="/projetos" element={<Projetos/>}/>
     </Routes>
     </BrowserRouter>
     </>
   )
 }
-export default App

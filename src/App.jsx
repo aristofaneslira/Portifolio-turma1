@@ -4,10 +4,12 @@ import Header from "./Components/Header";
 import Inicio from "./Components/Inicio";
 import Sobre from "./Components/Sobre";
 import Projetos from "./Components/Projetos";
+import { GlobalStyle } from "./Styles/global";
 
 export default function App() {
   return (
     <>
+    <GlobalStyle/>
     <BrowserRouter>
     <Header/>
     <Routes>
